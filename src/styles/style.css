@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Poppins:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color:#eff0f3;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container{
+    width: 90%;
+  max-width: 800px;
+  margin: 32px auto;
+}
+
+.heading{
+  font-size: 30px;
+  padding-bottom: 25px;
+  padding-right: 80px;
+  color: #094067;
+  text-align: center ;
+}
+
+
+.contain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ .meal {
+  width: 300px;
+  margin: 2rem;
+  border-radius: 10px;
+  border: 3px solid #fffffe;
+  background-color:#fffffe;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.6s ease;
+}
+
+.meal img {
+  width: 100%;
+}
+
+/* Ganti gaya kotak (box) pada hover */
+.meal:hover {
+  transform: scale(1.1);
+ box-shadow: -5px 6px 28px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -5px 6px 28px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -5px 6px 28px 0px rgba(0,0,0,0.75);
+}
+
+.meal-info {
+  color: black;
+  align-items: center;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+}
+
+.overview {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--main-color);
+  color: white;
+  font-size: 0.8rem;
+  padding: 1rem;
+  max-height: 100%;
+  overflow-y: auto;
+  transform: translateY(101%);
+  transition: transform 0.4s ease-in;
+  text-align: left;
+}
+
+.meal:hover .overview {
+  transform: translateY(0);
+}
+button {
+  background-color: #3da9fc; /* Warna latar belakang */
+  color: #fffffe; /* Warna teks */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya tombol saat dihover */
+button:hover {
+  background-color: #2674e9; /* Warna latar belakang saat dihover */
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+a {
+  color: inherit; 
+  text-decoration: none; 
+}
+
+
+a:hover {
+  text-decoration: underline; 
+ 
+}
+
+
+h3,h4,p{
+  color: #094067 ;
+}
+
+footer {
+ position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #fffffe;
+}
+
+footer p {
+  text-align: center;
+}
+
+@media (max-width:768px){
+  .container #search-box{
+    width: 100%;
+  }
+}
+
+@media (max-width:450px){
+
+  .container{
+    padding:25px 20px;
+  }
+
+  .container .image-container .image{
+    width: 100%;
+  }
+}
